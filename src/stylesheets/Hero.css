@@ -1,0 +1,110 @@
+.hero {
+  min-height: calc(100vh - 140px);
+
+  background-image: url('/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.hero-overlay {
+  min-height: inherit;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+
+  color: #ffffff;
+}
+
+.hero-content h1 {
+  max-width: 800px;
+  margin: 0 0 1.5rem;
+
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  line-height: 1.05;
+  font-weight: 700;
+}
+
+.hero-content p {
+  max-width: 650px;
+  margin: 0 0 2rem;
+
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  padding: 0.9rem 1.5rem;
+  border-radius: 6px;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.hero-button.primary {
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.hero-button.whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: calc(100vh - 130px);
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-button {
+    width: 100%;
+  }
+}

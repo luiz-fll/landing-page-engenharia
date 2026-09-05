@@ -1,0 +1,78 @@
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+  width: min(90%, 1200px);
+  min-height: 80px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #222222;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+.header-contact {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.phone {
+  color: #333333;
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.75rem 1.2rem;
+  border-radius: 6px;
+
+  background-color: #25d366;
+  color: #ffffff;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Tablet e celular */
+@media (max-width: 600px) {
+  .header-container {
+    min-height: 70px;
+  }
+
+  .phone {
+    display: none;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .whatsapp-button {
+    padding: 0.65rem 0.9rem;
+  }
+}

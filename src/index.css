@@ -1,6 +1,8 @@
 :root {
   font-family: Inter, sans-serif;
-  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+  font-feature-settings:
+    'liga' 1,
+    'calt' 1; /* fix for Chrome */
 
   --color-primary: #1f6f43;
   --color-primary-dark: #185634;

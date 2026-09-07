@@ -8,13 +8,9 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-
-        <span className="footer-name">
-          Fulano de Tal
-        </span>
+        <span className="footer-name">Fulano de Tal</span>
 
         <div className="footer-socials">
-
           {/* WhatsApp */}
           <a
             href="https://wa.me/5515999999999"
@@ -26,18 +22,12 @@ function Footer() {
           </a>
 
           {/* Instagram */}
-          <a
-            href="#"
-            aria-label="Instagram"
-          >
+          <a href="#" aria-label="Instagram">
             <InstagramIcon />
           </a>
 
           {/* Email */}
-          <a
-            href="mailto:contato@engenharia.com.br"
-            aria-label="Email"
-          >
+          <a href="mailto:contato@engenharia.com.br" aria-label="Email">
             <EmailIcon />
           </a>
 
@@ -50,12 +40,10 @@ function Footer() {
           >
             <LinkedInIcon />
           </a>
-
         </div>
-
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

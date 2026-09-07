@@ -1,6 +1,6 @@
-import { useState } from 'react';
-import '../stylesheets/Clients.css';
-import ProfileIcon from "./icons/ProfileIcon"
+import { useState } from 'react'
+import '../stylesheets/Clients.css'
+import ProfileIcon from './icons/ProfileIcon'
 
 const testimonials = [
   {
@@ -27,7 +27,7 @@ const testimonials = [
     rating: 4.5,
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis ipsum. Praesent mauris.',
   },
-];
+]
 
 function StarRating({ rating }) {
   return (
@@ -40,41 +40,39 @@ function StarRating({ rating }) {
 
       <strong>{rating.toFixed(1)}</strong>
     </div>
-  );
+  )
 }
 
 function Clients() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const previous = () => {
     setCurrentIndex((current) =>
-      current === 0 ? testimonials.length - 1 : current - 1
-    );
-  };
+      current === 0 ? testimonials.length - 1 : current - 1,
+    )
+  }
 
   const next = () => {
     setCurrentIndex((current) =>
-      current === testimonials.length - 1 ? 0 : current + 1
-    );
-  };
+      current === testimonials.length - 1 ? 0 : current + 1,
+    )
+  }
 
-  const testimonial = testimonials[currentIndex];
+  const testimonial = testimonials[currentIndex]
 
   return (
     <section id="clientes" className="clients">
       <div className="clients-container">
-
         <div className="clients-header">
           <h2>O que nossos clientes dizem</h2>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer nec odio. Praesent libero.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio. Praesent libero.
           </p>
         </div>
 
         <div className="carousel">
-
           <button
             className="carousel-button previous"
             onClick={previous}
@@ -84,9 +82,7 @@ function Clients() {
           </button>
 
           <article className="testimonial-card">
-
             <div className="testimonial-header">
-
               <div className="profile-icon" aria-hidden="true">
                 <ProfileIcon />
               </div>
@@ -95,15 +91,11 @@ function Clients() {
                 <h3>{testimonial.name}</h3>
                 <span>{testimonial.date}</span>
               </div>
-
             </div>
 
             <StarRating rating={testimonial.rating} />
 
-            <p className="testimonial-text">
-              "{testimonial.text}"
-            </p>
-
+            <p className="testimonial-text">"{testimonial.text}"</p>
           </article>
 
           <button
@@ -113,7 +105,6 @@ function Clients() {
           >
             &#10095;
           </button>
-
         </div>
 
         <div className="carousel-indicators">
@@ -121,19 +112,16 @@ function Clients() {
             <button
               key={testimonial.name}
               className={
-                index === currentIndex
-                  ? 'indicator active'
-                  : 'indicator'
+                index === currentIndex ? 'indicator active' : 'indicator'
               }
               onClick={() => setCurrentIndex(index)}
               aria-label={`Ver avaliação ${index + 1}`}
             />
           ))}
         </div>
-
       </div>
     </section>
-  );
+  )
 }
 
-export default Clients;
+export default Clients

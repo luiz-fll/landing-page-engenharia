@@ -1,4 +1,4 @@
-import '../stylesheets/Services.css';
+import '../stylesheets/Services.css'
 
 const services = [
   {
@@ -31,19 +31,18 @@ const services = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.',
   },
-];
+]
 
 function Services() {
   return (
     <section id="servicos" className="services">
       <div className="services-container">
-
         <div className="services-header">
           <h2>Serviços Oferecidos</h2>
 
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+            odio. Praesent libero. Sed cursus ante dapibus diam.
           </p>
         </div>
 
@@ -61,10 +60,9 @@ function Services() {
             </article>
           ))}
         </div>
-
       </div>
     </section>
-  );
+  )
 }
 
-export default Services;
+export default Services

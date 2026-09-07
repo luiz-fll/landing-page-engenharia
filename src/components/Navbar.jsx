@@ -1,4 +1,4 @@
-import "../stylesheets/Navbar.css"
+import '../stylesheets/Navbar.css'
 
 function Navbar() {
   return (
@@ -13,7 +13,7 @@ function Navbar() {
         </div>
       </nav>
     </>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

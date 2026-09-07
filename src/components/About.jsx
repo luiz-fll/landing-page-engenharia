@@ -1,35 +1,26 @@
 import '../stylesheets/About.css';
+import CheckMarkIcon from './icons/CheckMarkIcon';
+import PillarsIcon from './icons/PillarsIcon';
+import StarIcon from './icons/StarIcon';
 
 const highlights = [
   {
     title: 'Experiência',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    icon: (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 2L3 7v2h18V7l-9-5zm-7 9v8H3v2h18v-2h-2v-8h-2v8h-2v-8h-2v8h-2v-8H5zm-2 11h18v2H3v-2z" />
-      </svg>
-    ),
+    icon: ( <PillarsIcon /> ),
   },
   {
     title: 'Qualidade',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    icon: (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 2l2.2 6.6H21l-5.5 4.1 2.1 6.6L12 15.2 6.4 19.3l2.1-6.6L3 8.6h6.8L12 2zm0 4.8L10.7 11H7.6l2.5 1.9-.9 3 2.8-2 2.8 2-.9-3 2.5-1.9h-3.1L12 6.8z" />
-      </svg>
-    ),
+    icon: ( <StarIcon /> ),
   },
   {
     title: 'Compromisso',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    icon: (
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm-1.1 15.1l-4-4 1.4-1.4 2.6 2.6 5.7-5.7L18 10l-7.1 7.1z" />
-      </svg>
-    ),
+    icon: ( <CheckMarkIcon /> ),
   },
 ];
 

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../stylesheets/Clients.css';
+import ProfileIcon from "./icons/ProfileIcon"
 
 const testimonials = [
   {
@@ -87,9 +88,7 @@ function Clients() {
             <div className="testimonial-header">
 
               <div className="profile-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-8a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm0 10c-5 0-8 2.5-8 6v2h16v-2c0-3.5-3-6-8-6zm-5.9 6c.5-2.3 2.6-4 5.9-4s5.4 1.7 5.9 4H6.1z" />
-                </svg>
+                <ProfileIcon />
               </div>
 
               <div className="testimonial-info">

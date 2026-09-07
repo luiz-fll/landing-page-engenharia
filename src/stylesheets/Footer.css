@@ -1,12 +1,12 @@
 .footer {
   padding: 2rem 0;
 
-  background-color: #222222;
-  color: #ffffff;
+  background-color: var(--color-text);
+  color: var(--color-background);
 }
 
 .footer-container {
-  width: min(90%, 1200px);
+  width: min(90%, var(--container-width));
   min-height: 50px;
   margin: 0 auto;
 
@@ -37,7 +37,7 @@
 
   border-radius: 50%;
 
-  color: #ffffff;
+  color: var(--color-background);
   text-decoration: none;
 
   transition:
@@ -46,7 +46,7 @@
 }
 
 .footer-socials a:hover {
-  background-color: #1f6f43;
+  background-color: var(--color-primary);
   transform: translateY(-3px);
 }
 

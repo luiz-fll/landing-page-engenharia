@@ -4,12 +4,13 @@
   z-index: 1000;
 
   width: 100%;
-  background-color: #ffffff;
-  border-bottom: 1px solid #e5e5e5;
+
+  background-color: var(--color-background);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .navbar-container {
-  width: min(90%, 1200px);
+  width: min(90%, var(--container-width));
   min-height: 60px;
   margin: 0 auto;
 
@@ -22,18 +23,18 @@
 .navbar a {
   position: relative;
 
-  color: #333333;
+  padding: 0.5rem 0;
+
+  color: var(--color-text);
   font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
-
-  padding: 0.5rem 0;
 
   transition: color 0.2s ease;
 }
 
 .navbar a:hover {
-  color: #1f6f43;
+  color: var(--color-primary);
 }
 
 /* Linha abaixo do link ao passar o mouse */
@@ -47,7 +48,7 @@
   width: 0;
   height: 2px;
 
-  background-color: #1f6f43;
+  background-color: var(--color-primary);
 
   transition: width 0.2s ease;
 }
